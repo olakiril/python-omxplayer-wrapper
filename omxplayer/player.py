@@ -5,7 +5,7 @@ import signal
 import logging
 import threading
 import math
-import urlparse
+import urllib.parse as urlparse
 
 from decorator import decorator
 from glob import glob
