@@ -185,6 +185,8 @@ class OMXPlayer(object):
         while tries < 50:
             logger.debug('DBus connect attempt: {}'.format(tries))
             try:
+                print('Connecting')
+                print(tries)
                 connection = Connection(bus_address_finder.get_address(), self._dbus_name)
                 logger.debug(
                     'Connected to OMXPlayer at DBus address: %s' % connection)
